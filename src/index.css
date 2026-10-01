@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", sans-serif;
+  --color-primary: #3f6ff5;
+  --color-primary-dark: #2f57cc;
+  --color-ink: #0d1b2a;
+  --color-muted: #5b6776;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white font-sans text-ink antialiased;
+}
+
+.wrap {
+  @apply mx-auto w-full max-w-6xl px-6;
+}
+
+.section {
+  @apply py-24;
+}
+
+.section-title {
+  @apply text-3xl font-bold md:text-4xl;
+}
+
+.section-title span {
+  @apply text-primary;
+}
+
+.btn {
+  @apply inline-block rounded-md bg-primary px-8 py-3 text-sm font-medium text-white
+    shadow-lg shadow-primary/30 transition hover:bg-primary-dark hover:-translate-y-0.5;
+}
+
+.blob {
+  border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+  animation: morph 8s ease-in-out infinite;
+}
+
+@keyframes morph {
+  0%, 100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; }
+  50% { border-radius: 40% 60% 42% 58% / 45% 55% 45% 55%; }
+}
+
+
+.cursor {
+  display: inline-block;
+  width: 3px;
+  height: 0.85em;
+  margin-left: 4px;
+  vertical-align: middle;
+  background: var(--color-primary);
+  animation: blink 0.9s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}

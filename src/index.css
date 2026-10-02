@@ -2,8 +2,8 @@
 
 @theme {
   --font-sans: "Poppins", sans-serif;
-  --color-primary: #3f6ff5;
-  --color-primary-dark: #2f57cc;
+  --color-primary: #f5b301;
+  --color-primary-dark: #d99a00;
   --color-ink: #0d1b2a;
   --color-muted: #5b6776;
 }
@@ -33,7 +33,7 @@ body {
 }
 
 .btn {
-  @apply inline-block rounded-md bg-primary px-8 py-3 text-sm font-medium text-white
+  @apply inline-block rounded-md bg-primary px-8 py-3 text-sm font-medium text-ink
     shadow-lg shadow-primary/30 transition hover:bg-primary-dark hover:-translate-y-0.5;
 }
 

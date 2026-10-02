@@ -2,7 +2,7 @@ import TypeWriter from "./TypeWriter";
 import { Link } from "react-scroll";
 import { profile, socials, roles } from "../data/content";
 import SocialIcon from "./SocialIcon";
-import me from "../assets/me.png";
+import me from "../assets/cartoon.png";
 
 export default function Hero() {
   return (
@@ -30,7 +30,7 @@ export default function Hero() {
                 target="_blank"
                 rel="noreferrer"
                 aria-label={s.label}
-                className="flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 text-ink transition hover:-translate-y-1 hover:border-primary hover:bg-primary hover:text-white"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 text-ink transition hover:-translate-y-1 hover:border-primary hover:bg-primary hover:text-ink"
                 >
                 <SocialIcon name={s.name} />
                 </a>

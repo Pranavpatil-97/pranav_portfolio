@@ -12,9 +12,14 @@ export default function Navbar() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-100 bg-white/90 backdrop-blur">
       <nav className="wrap flex h-16 items-center justify-between">
-        <Link to="home" smooth className="cursor-pointer text-sm font-semibold">
-          {profile.name}
-        </Link>
+        <Link
+  to="home"
+  smooth
+  className="cursor-pointer text-2xl font-bold tracking-tight"
+>
+  {profile.name}
+  <span className="text-primary">.</span>
+</Link>
 
         {/* Desktop links */}
         <ul className="hidden gap-10 md:flex">

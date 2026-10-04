@@ -40,10 +40,16 @@ export const roles = [
 ];
 export const projects = [
   {
+    title: "StudyFlow",
+    desc: "Studyflow is a full-stack study planner I built with the MERN stack. Students can track their syllabus unit by unit, manage daily tasks with priorities and due dates, and see their progress, study time, and streak on one dashboard.",
+    tech: ["React", "Tailwind", "Express", "MongoDB"],
+    link: "https://studyflow-gamma-ten.vercel.app/",
+  },
+  {
     title: "Jobverse",
     desc: "Student job portal with Student, Employer and Admin roles, JWT authentication, role-based routing and an employer approval gate. Covered by a 24-test integration suite.",
     tech: ["React", "Node", "Express", "MongoDB", "JWT"],
-    link: "#",
+    link: "https://github.com/Pranavpatil-97/Jobverse.git",
   },
   {
     title: "Aurelio",
@@ -55,7 +61,7 @@ export const projects = [
     title: "Kunbi News",
     desc: "Marathi-language news portal with admin, employee and public roles, Cloudinary image uploads and a mobile-first responsive layout. Deployed on Vercel.",
     tech: ["React", "Node", "MongoDB", "Cloudinary"],
-    link: "#",
+    link: "https://www.kunbinews.in/",
   },
   {
     title: "Voting System",
@@ -67,7 +73,7 @@ export const projects = [
     title: "LearnLens",
     desc: "Product that helps career-skill learners finish what they start, shaped by a structured 30-interview user research process.",
     tech: ["React", "Next.js", "Node"],
-    link: "#",
+    link: "https://github.com/Pranavpatil-97/LearnLens.git",
   },
   {
     title: "Attendace using face recognization",
